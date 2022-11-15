@@ -1,0 +1,30 @@
+.form {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.form label {
+  opacity: 0;
+}
+
+.form input {
+  padding: 10px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.form input::placeholder {
+  color: black;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
