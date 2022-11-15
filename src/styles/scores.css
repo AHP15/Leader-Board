@@ -1,0 +1,28 @@
+.score-headline {
+  display: flex;
+  margin: 15px 0;
+}
+
+.score-headline h2 {
+  flex: 1;
+  font-size: 2rem;
+}
+
+.score-list {
+  list-style-type: none;
+  border: 2px solid black;
+}
+
+.score-list li {
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.even {
+  background-color: whitesmoke;
+}
+
+.odd {
+  background-color: lightblue;
+}

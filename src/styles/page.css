@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#main > h1 {
+  font-size: 3.5rem;
+  padding: 30px 10px;
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container { /* for form and score element */
+  flex: 0.5;
+  margin: 30px;
+}
+
+.btn {
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: transparent;
+  font-size: 18px;
+  box-shadow: 4px 4px 2px black;
+}
