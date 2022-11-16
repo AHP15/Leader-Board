@@ -1,4 +1,4 @@
-import { getScores } from '../api/scores';
+import { getScores } from '../api/scores.js';
 
 const scores = () => {
   const action = (list) => {
@@ -20,7 +20,7 @@ const scores = () => {
     scores.forEach((score, i) => {
       event.target.insertAdjacentHTML(
         'beforeend',
-        `<li class=${i % 2 === 0 ? 'even' : 'odd'}>${score.user}: ${score.score}</li>`
+        `<li class=${i % 2 === 0 ? 'even' : 'odd'}>${score.user}: ${score.score}</li>`,
       );
     });
   };

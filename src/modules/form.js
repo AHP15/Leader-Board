@@ -1,6 +1,6 @@
-import { postScore } from '../api/scores';
+import { postScore } from '../api/scores.js';
 
-import { validateUserName, validateScore, showError } from '../validate/addScore';
+import { validateUserName, validateScore, showError } from '../validate/addScore.js';
 
 const form = () => {
   const addScore = (form) => {
