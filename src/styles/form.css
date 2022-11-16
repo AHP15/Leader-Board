@@ -28,3 +28,10 @@
   justify-content: flex-end;
   margin-top: 15px;
 }
+
+.error {
+  height: 15px;
+  color: red;
+  font-size: 14px;
+  padding-left: 10px;
+}
