@@ -5,6 +5,7 @@ import { validateUserName, validateScore, showError } from '../validate/addScore
 const form = () => {
   const addScore = (form) => {
     const { user, score } = form.elements;
+    form.dispatchEvent(new CustomEvent('add_score_request'));
 
     postScore(user.value, score.value).then(() => {
       form.dispatchEvent(new CustomEvent('score_added'));
@@ -13,6 +14,7 @@ const form = () => {
 
   window.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.form');
+    const btn = document.querySelector('.btn-container button');
 
     form.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -31,10 +33,22 @@ const form = () => {
       return addScore(form);
     });
 
+    form.addEventListener('add_score_request', () => {
+      btn.textContent = 'Loading...';
+    });
+
     form.addEventListener('score_added', () => {
       const { user, score } = form.elements;
+      const seccuss = document.querySelector('.seccuss');
+
       user.value = '';
       score.value = 0;
+      btn.textContent = 'Submit';
+      seccuss.textContent = 'Score added seccussfully';
+
+      setTimeout(() => {
+        seccuss.textContent = '';
+      }, 3000);
     });
   });
 
@@ -51,6 +65,7 @@ const form = () => {
     <p class="error score-error"></p>
   
     <div class="btn-container">
+       <p class="seccuss"><p/>
       <button type="submit" class="btn">Submit</button>
     </div>
   </form>`;
