@@ -26,5 +26,20 @@
 .btn-container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-top: 15px;
+}
+
+.error {
+  height: 15px;
+  color: red;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.seccuss {
+  width: 200px;
+  text-align: center;
+  margin-right: 20px;
+  color: green;
 }

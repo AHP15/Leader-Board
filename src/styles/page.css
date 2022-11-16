@@ -37,3 +37,7 @@
   font-size: 18px;
   box-shadow: 4px 4px 2px black;
 }
+
+.btn:active {
+  box-shadow: none;
+}
