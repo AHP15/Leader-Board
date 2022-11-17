@@ -1,6 +1,6 @@
 # Leader-Board
 
-This a static website built with ES6 and webpack
+This is a single web application created using ES6 syntax and webpack. It uses an external API to fech game scores and add new score to a game
 
 ## Live demo
 
