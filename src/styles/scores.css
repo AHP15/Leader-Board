@@ -1,3 +1,19 @@
+.scores {
+  animation: animate-scores 1s alternate;
+}
+
+@keyframes animate-scores {
+  from {
+    opacity: 0.5;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .score-headline {
   display: flex;
   margin: 15px 0;
@@ -12,6 +28,14 @@
   list-style-type: none;
   border: 2px solid black;
   min-height: 200px;
+  max-height: 300px;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.score-list::-webkit-scrollbar {
+  display: none;
 }
 
 .score-list li {
