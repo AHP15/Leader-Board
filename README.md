@@ -4,7 +4,7 @@ This a static website built with ES6 and webpack
 
 ## Live demo
 
-[demo here](https://github.com/Abdessittir/Leader-Board)
+[demo here](https://abdessittir.github.io/Leader-Board/dist/index.html)
 
 ## Buit with
 * HTML/CSS
