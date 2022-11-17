@@ -2,6 +2,19 @@
   flex: 0.4;
   display: flex;
   flex-direction: column;
+  animation: animate-form 1s alternate;
+}
+
+@keyframes animate-form {
+  from {
+    opacity: 0.5;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .form h2 {

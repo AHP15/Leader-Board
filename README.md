@@ -21,6 +21,8 @@ git clone https://github.com/Abdessittir/Leader-Board.git
 ```bash
 npm install
 ```
+3. create a `.env` file in your root directory and add to it two environment variables `BASE_URL`
+and `GAME_ID`, for more info visit the [API docs](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 ## Prerequisites
 * GitHub flow
