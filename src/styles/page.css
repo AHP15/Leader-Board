@@ -24,7 +24,7 @@
   flex-wrap: wrap;
 }
 
-.container { /* for form and score element */
+.container { /* for form and score elements  */
   flex: 0.5;
   margin: 30px;
 }
